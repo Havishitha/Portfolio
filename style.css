@@ -1,0 +1,228 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f7ebe8; /* Soft Cream Background */
+  color: #333; /* Dark Text for clarity */
+}
+
+/* Navbar */
+header {
+  background: #5d5b6a; /* Soft Dark Gray */
+  color: #f7ebe8; /* Cream Text */
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 2rem;
+}
+
+nav a {
+  color: #f7ebe8;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #ff8a80; /* Bright Coral */
+}
+
+/* Hero Section */
+.hero {
+  background: #ffccbc; /* Light Coral */
+  color: #2d2d2d; /* Darker Text for contrast */
+  padding: 5rem 1rem;
+  text-align: center;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.4s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #2d2d2d; /* Dark Gray */
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  color: #4a4a4a; /* Slightly lighter gray */
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  background: #ff8a80; /* Bright Coral */
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background: #ff5252; /* Vivid Coral */
+  transform: translateY(-2px);
+}
+
+/* Section Styling */
+.section {
+  padding: 3rem 1rem;
+  text-align: center;
+  color: #2d2d2d; /* Dark Text for contrast */
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #333; /* Dark Text */
+  font-weight: 600;
+}
+
+/* Skills Section */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.skill-item {
+  background: #ffe0b2; /* Light Apricot */
+  color: #333; /* Dark Text */
+  padding: 1rem;
+  border-radius: 8px;
+  min-width: 120px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Projects Section */
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.project-item {
+  background: #4db6ac; /* Soft Teal */
+  padding: 1.5rem;
+  border-radius: 8px;
+  color: #f7ebe8; /* Light Cream Text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  max-width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-item h3 {
+  font-size: 1.4rem;
+  color: #f7ebe8; /* Light Cream */
+  margin-bottom: 0.5rem;
+}
+
+.project-item p {
+  color: #f7ebe8; /* Light Cream Text */
+}
+
+/* Contact Form */
+#contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #ffccbc; /* Light Coral */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.7rem 0;
+  border: 1px solid #f1a7a1;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1rem;
+  background-color: #ffe0b2; /* Light Apricot */
+  color: #333; /* Darker Text */
+}
+
+#contact-form button {
+  width: 100%;
+  padding: 0.7rem;
+  background: #ff8a80; /* Bright Coral */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#contact-form button:hover {
+  background: #ff5252; /* Vivid Coral */
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #5d5b6a;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .skills-grid,
+  .project-grid {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Havishitha Yallamraju</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Hello, I'm Havishitha Yallamraju</h1>
+    <p>A passionate Computer Science student specialized in AI & ML</p>
+    <a href="#contact" class="button">Contact Me</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I am a final-year B.Tech student specializing in Artificial Intelligence and Machine Learning. I am passionate about solving real-world problems using technology and look forward to starting my professional journey in the tech industry.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-item">Java</div>
+      <div class="skill-item">Python</div>
+      <div class="skill-item">JavaScript</div>
+      <div class="skill-item">Machine Learning</div>
+      <div class="skill-item">Data Analysis</div>
+      <div class="skill-item">HTML & CSS</div>
+      <div class="skill-item">AWS</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-item">
+        <h3>Autonomous Car Driving Using Deep Learning</h3>
+        <p>Revolutionized autonomous driving research with a deep learning-based system, achieving a 20% improvement in
+            real-time navigation precision and 15% enhancement in obstacle avoidance, significantly elevating safety and efficiency standards.</p>
+      </div>
+      <div class="project-item">
+        <h3>Home Credit Default Risk Management</h3>
+        <p>Applied data science to enhance default risk models, achieving a 15% accuracy improvement. Collaborated cross-functionally
+            for integrated predictive analytics, achieving 78% accuracy in predicting default risks.
+            </p>
+      </div>
+      <div class="project-item">
+        <h3>Image Captioning</h3>
+        <p>Implemented an Image Caption Generator using CNNs and LSTM-based RNNs on TensorFlow/Keras, utilizing the Flickr 8K
+            dataset. Featured a novel model architecture where image embedding serves as initial input to the RNN, enhancing
+            descriptive accuracy through seamless integration of visual and textual information.
+            </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+  <h2>Contact Me</h2>
+   <form action="https://formsubmit.co/havishithay@gmail.com" method="POST" id="contact-form">
+      <!-- Hidden inputs for email subject and redirect (optional) -->
+      <input type="hidden" name="_subject" value="New Contact Form Submission">
+      <input type="hidden" name="_next" value="https://your-website.com/thank-you">
+    
+      <input type="text" name="name" id="name" placeholder="Your Name" required>
+      <input type="email" name="email" id="email" placeholder="Your Email" required>
+      <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="button">Send Message</button>
+    </form>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+<!-- Footer -->
+<footer>
+    &copy; [Your Name] - 2024. All Rights Reserved.
+  </footer>
+  
+</html>
